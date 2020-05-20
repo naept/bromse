@@ -12,6 +12,7 @@
 <script>
 
 import romse from "romse"
+//import * as data from "../engines.json"
 
 export default {
 
@@ -19,43 +20,12 @@ export default {
 
     return{
       request: "",
-      searchEngines:[
-        {
-          name: "Paris Librairie",
-          prefix: "https://www.parislibrairies.fr/listeliv.php?base=allbooks&mots_recherche=",
-          union: "+",
-          suffix: "",
-          search: true,
-        },
-        {
-          name: "Libraires Indépendantes",
-          prefix: "https://www.librairiesindependantes.com/product/search/?query=",
-          union: "+",
-          suffix: "",
-          search: true,
-        },
-        {
-          name: "leslibraires.fr",
-          prefix: "https://www.leslibraires.fr/recherche/?q=",
-          union: "+",
-          suffix: "",
-          search: true,
-        },
-        {
-          name: "Gibert",
-          prefix: "https://www.gibert.com/catalogsearch/result/?q=",
-          union: "+",
-          suffix: "",
-          search: true,
-        },
-        {
-          name: "Place des Libraires",
-          prefix: "https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=",
-          union: "+",
-          suffix: "",
-          search: true,
+      searchEngines: require("../engines.json").map(engine=>{
+        return{
+          ...engine,
+          search: true
         }
-      ]
+      })
     }
 
   },
@@ -63,10 +33,11 @@ export default {
   methods: {
   
     launchRequests (){
+
       this.searchEngines.forEach(engine=>{
         if (engine.search) {
-          romse(this.request, engine)
-        }
+            romse(this.request, engine)
+          }
       })
     }
   }
