@@ -28,5 +28,23 @@
         "prefix": "https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=",
         "union": "+",
         "suffix": ""
+    },
+    {
+        "name": "Recyclivres",
+        "prefix": "https://www.recyclivre.com/shop/recherche?orderby=price&orderway=asc&s=",
+        "union": "+",
+        "suffix": "&submit_search="
+    },
+    {
+        "name": "Amazon France",
+        "prefix": "https://www.amazon.fr/s?k=",
+        "union": "+",
+        "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss"
+    },
+    {
+        "name": "Fnac",
+        "prefix": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=2%211&Search=",
+        "union": "+",
+        "suffix": "&sft=1&sa=0"
     }
 ]
