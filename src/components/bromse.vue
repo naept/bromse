@@ -4,7 +4,7 @@
         input class="input is-rounded" 
         type="text"
         v-model="request"
-        placeholder="Enter a book request + Enter"
+        :placeholder="$t('placeholder')"
         @keydown.enter.exact.prevent
         @keyup.enter.exact="launchRequests"
       />

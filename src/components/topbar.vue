@@ -13,6 +13,10 @@
         <div class="navbar-end">
             <a class="navbar-item" href="https://naept.com/">Naept.com</a>
             <a class="navbar-item" href="https://blog.naept.com/">Blog</a>
+            <a role="button" class="navbar-item" @click="changeLang">
+                <img v-if="lang=='fr'" src="@/assets/flag_uk.png" style="">    
+                <img v-if="lang=='en'" src="@/assets/flag_fr.png" style="">    
+            </a>
         </div>    
     </div>
 
@@ -27,9 +31,24 @@ export default {
         }
     },
 
+    computed:{
+        lang(){
+            return this.$root.$i18n.locale
+        }
+    },
+
     methods:{
         toggleHamburger(){
             this.showMenu = !this.showMenu
+        },
+
+        changeLang(){
+            if (this.lang ==="fr") {
+                this.$i18n.locale = "en"
+            } else {
+                this.$i18n.locale = "fr"
+            }
+            
         }
     }
 }
