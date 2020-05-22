@@ -1,11 +1,16 @@
 <template>
-    <div>
+    <div class="control has-icons-right">
       <input 
+        input class="input is-rounded" 
+        type="text"
         v-model="request"
         placeholder="Enter a book request + Enter"
         @keydown.enter.exact.prevent
         @keyup.enter.exact="launchRequests"
       />
+        <span class="icon is-right">
+          <img src="@/assets/search.svg"/>
+        </span>
     </div>
 </template>
 
@@ -45,13 +50,10 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.control {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>
