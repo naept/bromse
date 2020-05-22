@@ -3,66 +3,77 @@
         "name": "Paris Librairie",
         "prefix": "https://www.parislibrairies.fr/listeliv.php?base=allbooks&mots_recherche=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Libraires Indépendantes",
         "prefix": "https://www.librairiesindependantes.com/product/search/?query=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "leslibraires.fr",
         "prefix": "https://www.leslibraires.fr/recherche/?q=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Gibert",
         "prefix": "https://www.gibert.com/catalogsearch/result/?q=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Place des Libraires",
         "prefix": "https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Recyclivres",
         "prefix": "https://www.recyclivre.com/shop/recherche?orderby=price&orderway=asc&s=",
         "union": "+",
-        "suffix": "&submit_search="
+        "suffix": "&submit_search=",
+        "search": "true"
     },
     {
         "name": "Decitre",
         "prefix": "https://www.decitre.fr/rechercher/result?q=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Furet du nord",
         "prefix": "https://www.furet.com/rechercher/result?q=",
         "union": "+",
-        "suffix": ""
+        "suffix": "",
+        "search": "true"
     },
     {
         "name": "Cultura",
         "prefix": "https://www.cultura.com/catalogsearch/result/?q=",
         "union": "+",
-        "suffix": "&classification=27674"
+        "suffix": "&classification=27674",
+        "search": "true"
     },
     {
         "name": "Amazon France",
         "prefix": "https://www.amazon.fr/s?k=",
         "union": "+",
-        "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss"
+        "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss",
+        "search": "false"
     },
     {
         "name": "Fnac",
         "prefix": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=2%211&Search=",
         "union": "+",
-        "suffix": "&sft=1&sa=0"
+        "suffix": "&sft=1&sa=0",
+        "search": "false"
     }
 ]
