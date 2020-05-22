@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <bromse msg="Welcome to Your Vue.js App"/>
+    <topbar />
+    <bromse />
   </div>
 </template>
 
 <script>
 import bromse from './components/bromse.vue'
+import topbar from './components/topbar.vue'
 
 export default {
   name: 'App',
   components: {
-    bromse
+    bromse,
+    topbar,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
