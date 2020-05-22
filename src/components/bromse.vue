@@ -14,13 +14,24 @@
           </span>
       </div>
 
-      <div class="container has-text-centered">Votre recherche sera exécutée sur {{ nbSearchedSites }} sites (onglets)</div>
+      <div class="container has-text-centered" style="margin-top: auto; margin-bottom: auto;">
+        <a role="button" @click="toggleList">
+          <img src="@/assets/chevron-right.svg" v-if="showList===false"/>
+          <img src="@/assets/chevron-down.svg" v-if="showList===true"/>
+        </a>
+        <span style="margin-top: auto; margin-bottom: auto;">{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
+      </div>
 
-      <div class="container" style="max-width: 300px;">
+      <div class="container" style="max-width: 300px;" v-if="showList">
         <ul>
+          <li>
+            <a role="button" @click="selectAll">
+                {{ $t("selectAll") }}
+            </a>
+          </li>
           <li v-for="engine in searchEngines" :key="engine.name">
             <label class="checkbox">
-              <input type="checkbox" v-model="engine.search" checked="engine.search">
+              <input type="checkbox" v-model="engine.search" :checked="engine.search==='false'? 'disabled' : ''">
                 {{ engine.name }}
             </label>
             
@@ -42,6 +53,7 @@ export default {
 
     return{
       request: "",
+      showList: false,
       searchEngines: require("../engines.json").map(engine=>{
         return{
           ...engine,
@@ -56,6 +68,7 @@ export default {
 
     nbSearchedSites: function(){
       let i = 0
+      console.log(this.searchEngines)
       this.searchEngines.forEach(engine=>{
         if (engine.search) {
             i++
@@ -68,9 +81,18 @@ export default {
   },
 
   methods: {
-  
-    launchRequests (){
+    
+    toggleList (){
+      this.showList = !this.showList
+    },
 
+    selectAll (){
+      this.searchEngines.forEach(engine=>{
+        engine.search = true
+      })
+    },
+
+    launchRequests (){
       this.searchEngines.forEach(engine=>{
         if (engine.search) {
             romse(this.request, engine)
