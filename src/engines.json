@@ -21,7 +21,7 @@
         "search": "true"
     },
     {
-        "name": "Gibert",
+        "name": "Gibert Jeune / Joseph",
         "prefix": "https://www.gibert.com/catalogsearch/result/?q=",
         "union": "+",
         "suffix": "",
@@ -60,13 +60,6 @@
         "prefix": "https://www.cultura.com/catalogsearch/result/?q=",
         "union": "+",
         "suffix": "&classification=27674",
-        "search": "true"
-    },
-    {
-        "name": "Amazon France",
-        "prefix": "https://www.amazon.fr/s?k=",
-        "union": "+",
-        "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss",
         "search": "false"
     },
     {
@@ -74,6 +67,13 @@
         "prefix": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=2%211&Search=",
         "union": "+",
         "suffix": "&sft=1&sa=0",
+        "search": "false"
+    },
+    {
+        "name": "Amazon France",
+        "prefix": "https://www.amazon.fr/s?k=",
+        "union": "+",
+        "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss",
         "search": "false"
     }
 ]

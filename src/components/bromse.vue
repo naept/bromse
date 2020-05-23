@@ -8,6 +8,7 @@
           :placeholder="$t('placeholder')"
           @keydown.enter.exact.prevent
           @keyup.enter.exact="launchRequests"
+          autofocus
         />
           <span class="icon is-right">
             <img src="@/assets/search.svg"/>
@@ -18,8 +19,8 @@
         <a role="button" @click="toggleList">
           <img src="@/assets/chevron-right.svg" v-if="showList===false"/>
           <img src="@/assets/chevron-down.svg" v-if="showList===true"/>
-        </a>
         <span style="margin-top: auto; margin-bottom: auto;">{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
+        </a>
       </div>
 
       <div class="container" style="max-width: 300px;" v-if="showList">
@@ -34,7 +35,19 @@
               <input type="checkbox" v-model="engine.search" :checked="engine.search==='false'? 'disabled' : ''">
                 {{ engine.name }}
             </label>
-            
+          </li>
+          <li>
+            <a role="button" @click="toggleNBSform" v-show="displayNBSform == false">{{ $t("newBookShop") }}</a>
+            <input 
+              class="input" 
+              id="nbsFormInput"
+              type="text" 
+              v-show="displayNBSform == true" 
+              :placeholder="$t('NBSplaceholder')"
+              v-model="NBSurl"
+              @keydown.enter.exact.prevent
+              @keyup.enter.exact="sendNBSissue"
+            >
           </li>
         </ul>
       </div>
@@ -45,7 +58,6 @@
 <script>
 
 import romse from "romse"
-//import * as data from "../engines.json"
 
 export default {
 
@@ -54,6 +66,8 @@ export default {
     return{
       request: "",
       showList: false,
+      displayNBSform: false,
+      NBSurl: "",
       searchEngines: require("../engines.json").map(engine=>{
         return{
           ...engine,
@@ -79,7 +93,33 @@ export default {
 
   },
 
+  mounted() {
+    this.cleanEngines()
+  },
+
   methods: {
+
+    cleanEngines(){
+      this.searchEngines.forEach(engine=>{
+        if (engine.search === "true") {
+           engine.search = true
+        } else {
+           engine.search = false
+        }       
+      })
+    },
+
+    toggleNBSform(){
+      this.displayNBSform = true
+      console.log(document.getElementById('#NBSform'))
+      document.getElementById('nbsFormInput').focus()
+    },
+
+    sendNBSissue(){
+      // create a new issue
+      this.NBSurl = ""
+      this.displayNBSform = false
+    },
     
     toggleList (){
       this.showList = !this.showList
@@ -92,11 +132,15 @@ export default {
     },
 
     launchRequests (){
+      let tabList = []
       this.searchEngines.forEach(engine=>{
         if (engine.search) {
-            romse(this.request, engine)
+            tabList.push(romse(this.request, engine))
           }
       })
+
+      // goto the first tab opened
+
     }
   }
 
