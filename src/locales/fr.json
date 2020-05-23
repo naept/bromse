@@ -1,6 +1,6 @@
 {
   "bigTitle": "Recherche de livres simultanée sur plusieurs librairies en ligne",
-  "perimeterMentionEnd": " sites (onglets)",
+  "perimeterMentionEnd": " sites (onglets différents)",
   "perimeterMentionStart": "Votre recherche se lancera sur ",
   "placeholder": "Entrer une requête et cliquer sur Enter",
   "selectAll": "Tout sélectionner"

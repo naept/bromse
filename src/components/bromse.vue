@@ -68,7 +68,6 @@ export default {
 
     nbSearchedSites: function(){
       let i = 0
-      console.log(this.searchEngines)
       this.searchEngines.forEach(engine=>{
         if (engine.search) {
             i++
