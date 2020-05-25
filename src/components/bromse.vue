@@ -92,21 +92,8 @@ export default {
 
   },
 
-  mounted() {
-    this.cleanEngines()
-  },
 
   methods: {
-
-    cleanEngines(){
-      this.searchEngines.forEach(engine=>{
-        if (engine.search === "true") {
-           engine.search = true
-        } else {
-           engine.search = false
-        }       
-      })
-    },
 
     toggleNBSform(){
       this.displayNBSform = true
@@ -132,14 +119,18 @@ export default {
     },
 
     launchRequests (){
-      // let tabList = []
-      this.searchEngines.reverse().forEach((engine)=>{
+      let engines = [...this.searchEngines]
+      let tabList = []
+      engines.reverse().forEach((engine)=>{
         if (engine.search) {
-          romse(this.request, engine).focus()
-        }
-      }).reverse()
+          tabList.push(romse(this.request, engine))
+        } 
+      })
+
+      if (tabList.some(tab=>tab==null)) {
+        this.$emit("showDisclaimer")
+      }
     }
-  
   }
 
 }
