@@ -53,7 +53,7 @@
         "prefix": "https://www.furet.com/rechercher/result?q=",
         "union": "+",
         "suffix": "",
-        "search": "true"
+        "search": "false"
     },
     {
         "name": "Cultura",

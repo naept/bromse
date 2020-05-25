@@ -15,8 +15,8 @@
           </span>
       </div>
 
-      <div class="container has-text-centered" style="margin-top: auto; margin-bottom: auto;">
-        <a role="button" @click="toggleList">
+      <div class="level" style="margin-top: auto; margin-bottom: auto;">
+        <a role="button" @click="toggleList" style="color: red" class="level-item has-text-centered">
           <img src="@/assets/chevron-right.svg" v-if="showList===false"/>
           <img src="@/assets/chevron-down.svg" v-if="showList===true"/>
         <span style="margin-top: auto; margin-bottom: auto;">{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
@@ -71,7 +71,6 @@ export default {
       searchEngines: require("../engines.json").map(engine=>{
         return{
           ...engine,
-          //search: true
         }
       })
     }
@@ -111,12 +110,13 @@ export default {
 
     toggleNBSform(){
       this.displayNBSform = true
-      console.log(document.getElementById('#NBSform'))
-      document.getElementById('nbsFormInput').focus()
+      this.$nextTick(()=>{
+        document.getElementById('nbsFormInput').focus()
+      })
     },
 
     sendNBSissue(){
-      // create a new issue
+      // create a new issue TODO
       this.NBSurl = ""
       this.displayNBSform = false
     },
@@ -132,16 +132,14 @@ export default {
     },
 
     launchRequests (){
-      let tabList = []
-      this.searchEngines.forEach(engine=>{
+      // let tabList = []
+      this.searchEngines.reverse().forEach((engine)=>{
         if (engine.search) {
-            tabList.push(romse(this.request, engine))
-          }
-      })
-
-      // goto the first tab opened
-
+          romse(this.request, engine).focus()
+        }
+      }).reverse()
     }
+  
   }
 
 }
