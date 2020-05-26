@@ -37,17 +37,7 @@
             </label>
           </li>
           <li>
-            <a role="button" @click="toggleNBSform" v-show="displayNBSform == false">{{ $t("newBookShop") }}</a>
-            <input 
-              class="input" 
-              id="nbsFormInput"
-              type="text" 
-              v-show="displayNBSform == true" 
-              :placeholder="$t('NBSplaceholder')"
-              v-model="NBSurl"
-              @keydown.enter.exact.prevent
-              @keyup.enter.exact="sendNBSissue"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfnKxBMZaeIEVF-0iOVuAKaJz30ziwupL58yqb9IKA-4vaC4g/viewform">{{ $t("newBookShop") }}</a>
           </li>
         </ul>
       </div>
@@ -66,8 +56,6 @@ export default {
     return{
       request: "",
       showList: false,
-      displayNBSform: false,
-      NBSurl: "",
       searchEngines: require("../engines.json").map(engine=>{
         return{
           ...engine,
@@ -95,19 +83,6 @@ export default {
 
   methods: {
 
-    toggleNBSform(){
-      this.displayNBSform = true
-      this.$nextTick(()=>{
-        document.getElementById('nbsFormInput').focus()
-      })
-    },
-
-    sendNBSissue(){
-      // create a new issue TODO
-      this.NBSurl = ""
-      this.displayNBSform = false
-    },
-    
     toggleList (){
       this.showList = !this.showList
     },
