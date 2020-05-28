@@ -40,6 +40,10 @@ export default {
         }
     },
 
+    mounted(){
+        this.setTabTitle()
+    },
+
     methods:{
         toggleHamburger(){
             this.showMenu = !this.showMenu
@@ -51,7 +55,13 @@ export default {
             } else {
                 this.$i18n.locale = "fr"
             }
+            this.setTabTitle()
             
+        },
+
+        setTabTitle(){
+            document.title = this.$i18n.t("tabTitle")
+            console.log("coucou")
         }
     }
 }

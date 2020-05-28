@@ -1,7 +1,7 @@
 {
   "It asks your location to get you postal code and select bookshops near you (future feature)": "Demande for localisation pour obtenir votre code postal et sélectionner les librairies proches de chez vous (future fonctionnalité)",
   "NBSplaceholder": "Entrer le lien vers une librairie",
-  "bigTitle": "Recherche de livres simultanée sur plusieurs librairies en ligne",
+  "bigTitle": "Recherche de livre simultanée sur plusieurs librairies en ligne",
   "disclaimerMessage1": "BROMSE va ouvrir 1 onglet pour chaque librairie.",
   "disclaimerMessage2": "Votre navigateur risque de bloquer l'ouverture de ces onglets.",
   "disclaimerMessage3": "Lancer une première recherche",
@@ -28,6 +28,7 @@
   "perimeterMentionStart": "Votre recherche va ouvrir ",
   "placeholder": "Entrer une requête et cliquer sur Enter",
   "selectAll": "Tout sélectionner",
+  "tabTitle": "BROMSE - Recherche de livre",
   "takeYourRequest": "Envoie votre requêtes aux librairies listées",
   "whatBROMSEdoes": "Ce que fait BROMSE :"
 }
