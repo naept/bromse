@@ -2,7 +2,7 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                <h2 class="subtitle is-4">&#9989; {{ $t("doTitle") }}</h2>
+                <h2 class="subtitle is-4 is-size-5-mobile">&#9989; {{ $t("doTitle") }}</h2>
                 <ul>
                     <li>&#127948; {{ $t("do1") }}</li>
                     <li>&#128194; {{ $t("do2") }}</li>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div class="column">
-                <h2 class="subtitle is-4">&#9940; {{ $t("dontTitle") }}</h2>
+                <h2 class="subtitle is-4 is-size-5-mobile">&#9940; {{ $t("dontTitle") }}</h2>
                 <ul>
                     <li>&#128164; {{ $t("dont1") }}</li>
                     <li>&#128584; {{ $t("dont2") }}</li>

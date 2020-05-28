@@ -1,18 +1,22 @@
 <template>
     <div>
-      <div class="control has-icons-right">
-        <input 
-          input class="input is-rounded" 
-          type="text"
-          v-model="request"
-          :placeholder="$t('placeholder')"
-          @keydown.enter.exact.prevent
-          @keyup.enter.exact="launchRequests"
-          autofocus
-        />
-          <a role="button" class="icon is-right">
+      <div class="field has-addons is-research-field">
+        <div class="control">
+          <input 
+            input class="input is-rounded" 
+            type="text"
+            v-model="request"
+            :placeholder="$t('placeholder')"
+            @keydown.enter.exact.prevent
+            @keyup.enter.exact="launchRequests"
+            autofocus
+          />
+        </div>
+        <div class="control">
+          <button class="button is-rounded" @click="launchRequests" :disabled="request.length===0">
             <img src="@/assets/search.svg"/>
-          </a>
+          </button>
+        </div>
       </div>
 
       <div class="level" style="margin-top: auto; margin-bottom: auto;">
@@ -112,10 +116,13 @@ export default {
 </script>
 
 <style scoped>
-.control {
+.is-research-field {
   max-width: 500px;
   margin-right: auto;
   margin-left: auto;
+}
+.is-research-field > .control:first-child {
+  width: 100%;
 }
 .is-red{
   color: red;
