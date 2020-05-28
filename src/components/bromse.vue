@@ -10,16 +10,16 @@
           @keyup.enter.exact="launchRequests"
           autofocus
         />
-          <span class="icon is-right">
+          <a role="button" class="icon is-right">
             <img src="@/assets/search.svg"/>
-          </span>
+          </a>
       </div>
 
       <div class="level" style="margin-top: auto; margin-bottom: auto;">
-        <a role="button" @click="toggleList" style="color: red" class="level-item has-text-centered">
+        <a role="button" @click="toggleList" class="level-item has-text-centered is-red">
           <img src="@/assets/chevron-right.svg" v-if="showList===false"/>
           <img src="@/assets/chevron-down.svg" v-if="showList===true"/>
-        <span style="margin-top: auto; margin-bottom: auto;">{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
+          <span>{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
         </a>
       </div>
 
@@ -117,4 +117,9 @@ export default {
   margin-right: auto;
   margin-left: auto;
 }
+.is-red{
+  color: red;
+  font-size: 0.85rem;
+}
+
 </style>

@@ -2,18 +2,12 @@
     <footer class="footer">
     <div class="content has-text-centered">
         <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        <strong>B.R.O.M.S.E.</strong> by <a target="_blank" rel="noopener noreferrer" href="https://naept.com/">Naept</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
         </p>
     </div>
 </footer>
 </template>
 
 <style scoped>
-footer{
-    position: absolute;
-    bottom: 1px;
-    width: 100%;
-}
 </style>
