@@ -49,6 +49,20 @@
         "search": true
     },
     {
+        "name": "Les libraires ensemble",
+        "prefix": "https://www.libraires-ensemble.com/recherche/?q=",
+        "union": "+",
+        "suffix": "",
+        "search": true
+    },
+    {
+        "name": "Initiales",
+        "prefix": "https://www.initiales.org/recherche/?q=",
+        "union": "+",
+        "suffix": "",
+        "search": true
+    },
+    {
         "name": "Furet du nord",
         "prefix": "https://www.furet.com/rechercher/result?q=",
         "union": "+",
