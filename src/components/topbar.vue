@@ -61,7 +61,6 @@ export default {
 
         setTabTitle(){
             document.title = this.$i18n.t("tabTitle")
-            console.log("coucou")
         }
     }
 }

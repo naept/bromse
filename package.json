@@ -1,5 +1,6 @@
 {
   "name": "bromse",
+  "description": "BROMSE est un outil simple, léger et open-source pour rechercher un même livre sur plusieurs site de librairie en ligne",
   "version": "0.1.0",
   "private": true,
   "scripts": {
