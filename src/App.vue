@@ -46,12 +46,12 @@ export default {
 
   methods:{
     closeDisclaimer(){
-      Cookies.set("firstTime", false)
+      Cookies.set("firstTime", false, { expires: 1825 })
       this.displayDisclaimer = false
     },
 
     showDisclaimer(){
-      Cookies.set("firstTime", true)
+      Cookies.set("firstTime", true, { expires: 1825 })
       this.displayDisclaimer = true
     }
   }
