@@ -27,7 +27,7 @@
         </a>
       </div>
 
-      <div class="container" style="max-width: 300px;" v-if="showList">
+      <div class="container" style="max-width: 400px;" v-if="showList">
         <ul>
           <li>
             <a role="button" @click="selectAll">

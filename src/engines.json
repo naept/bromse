@@ -1,93 +1,170 @@
 [
     {
-        "name": "Paris Librairie",
-        "prefix": "https://www.parislibrairies.fr/listeliv.php?base=allbooks&mots_recherche=",
-        "union": "+",
-        "suffix": "",
-        "search": true
-    },
-    {
         "name": "Libraires Indépendantes",
         "prefix": "https://www.librairiesindependantes.com/product/search/?query=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "leslibraires.fr",
         "prefix": "https://www.leslibraires.fr/recherche/?q=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Gibert Jeune / Joseph",
         "prefix": "https://www.gibert.com/catalogsearch/result/?q=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Place des Libraires",
         "prefix": "https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Recyclivres",
         "prefix": "https://www.recyclivre.com/shop/recherche?orderby=price&orderway=asc&s=",
         "union": "+",
         "suffix": "&submit_search=",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Decitre",
         "prefix": "https://www.decitre.fr/rechercher/result?q=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Les libraires ensemble",
         "prefix": "https://www.libraires-ensemble.com/recherche/?q=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
     },
     {
         "name": "Initiales",
         "prefix": "https://www.initiales.org/recherche/?q=",
         "union": "+",
         "suffix": "",
-        "search": true
+        "search": true,
+        "location": ""
+    },
+    {
+        "name": "Paris Librairie",
+        "prefix": "https://www.parislibrairies.fr/listeliv.php?base=allbooks&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "75"
     },
     {
         "name": "Furet du nord",
         "prefix": "https://www.furet.com/rechercher/result?q=",
         "union": "+",
         "suffix": "",
-        "search": false
+        "search": false,
+        "location": "59,60,62,77,78,93,94,Belgique"
+    },
+    {
+        "name": "Chez mon libraire",
+        "prefix": "https://www.chez-mon-libraire.fr/listeliv.php?base=allbooks&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "01,03,07,15,26,38,42,43,63,69,73,74"
+    },
+    {
+        "name": "Librairies Indépendantes en Nouvelle-Aquitaine",
+        "prefix": "https://www.librairies-nouvelleaquitaine.com/listeliv.php?base=allbooks&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "16,17,19,24,33,40,47,64,79,86,87"
+    },
+    {
+        "name": "Librairies 93",
+        "prefix": "https://www.librairies93.fr/listeliv.php?base=allbooks&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "93,94"
+    },
+    {
+        "name": "Libraire(s) à Nice",
+        "prefix": "https://www.librairesanice.fr/listeliv.php?base=paper&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "06"
+    },
+    {
+        "name": "Libraires du Sud",
+        "prefix": "https://hop.librairesdusud.com/listeliv.php?base=allbooks&mots_recherche=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "04,06,13,83,84"
+    },
+    {
+        "name": "Libraires de l'Est",
+        "prefix": "https://www.librairesdelest.fr/recherche/?q=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "08,10,51,54,55,57,67,68,88"
+    },
+    {
+        "name": "Association Librairies Indépendantes Pays de la Loire",
+        "prefix": "https://resa.librairies-alip.fr/listeliv.php?base=allbooks&mots_recherche=jules+verne+l%27%C3%AEle+myst%C3%A9rieuse",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "44,49,72,85"
+    },
+    {
+        "name": "Libr/aire",
+        "prefix": "https://www.libr-aire.fr/recherche/?q=",
+        "union": "+",
+        "suffix": "",
+        "search": false,
+        "location": "02,59,60,62,80"
     },
     {
         "name": "Cultura",
         "prefix": "https://www.cultura.com/catalogsearch/result/?q=",
         "union": "+",
         "suffix": "&classification=27674",
-        "search": false
+        "search": false,
+        "location": ""
     },
     {
         "name": "Fnac",
         "prefix": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=2%211&Search=",
         "union": "+",
         "suffix": "&sft=1&sa=0",
-        "search": false
+        "search": false,
+        "location": ""
     },
     {
         "name": "Amazon France",
         "prefix": "https://www.amazon.fr/s?k=",
         "union": "+",
         "suffix": "&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss",
-        "search": false
+        "search": false,
+        "location": ""
     }
 ]
