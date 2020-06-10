@@ -27,8 +27,10 @@
   "perimeterMentionEnd": " new tabs, one for each bookshop.",
   "perimeterMentionStart": "Your request will open ",
   "placeholder": "Enter a book request + Enter",
+  "reInitialize": "Re-initialize",
   "selectAll": "Select All",
   "tabTitle": "BROMSE - Book search",
   "takeYourRequest": "Send your request to the listed websites",
+  "unSelectAll": "Unselect all",
   "whatBROMSEdoes": "What BROMSE does :"
 }

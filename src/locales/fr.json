@@ -27,8 +27,10 @@
   "perimeterMentionEnd": " nouveaux onglets, un pour chaque librairie",
   "perimeterMentionStart": "Votre recherche va ouvrir ",
   "placeholder": "Entrer une requête + Enter",
+  "reInitialize": "Réinitialiser",
   "selectAll": "Tout sélectionner",
   "tabTitle": "BROMSE - Recherche de livre",
   "takeYourRequest": "Envoie votre requêtes aux librairies listées",
+  "unSelectAll": "Tout effacer",
   "whatBROMSEdoes": "Ce que fait BROMSE :"
 }

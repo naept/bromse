@@ -20,8 +20,8 @@
         "prefix": "https://www.gibert.com/catalogsearch/result/?q=",
         "union": "+",
         "suffix": "",
-        "search": true,
-        "location": ""
+        "search": false,
+        "location": "13,21,27,31,34,38,63,69,71,75,78,86,92,94"
     },
     {
         "name": "Place des Libraires",
@@ -44,8 +44,8 @@
         "prefix": "https://www.decitre.fr/rechercher/result?q=",
         "union": "+",
         "suffix": "",
-        "search": true,
-        "location": ""
+        "search": false,
+        "location": "38,69,71,73,74,92"
     },
     {
         "name": "Les libraires ensemble",
@@ -77,7 +77,7 @@
         "union": "+",
         "suffix": "",
         "search": false,
-        "location": "59,60,62,77,78,93,94,Belgique"
+        "location": "59,60,62,77,78,93,94"
     },
     {
         "name": "Chez mon libraire",
