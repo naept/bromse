@@ -14,7 +14,6 @@
   "do31": "Crée un seul cookie pour savoir si vous avez fermé le message \"",
   "do32": "\" et ne plus vous le réafficher",
   "do4": "Et c'est tout !",
-  "do5": "Peut-être qu'un jour il vous demandera votre localisation pour améliorer la sélection des librairies...",
   "doTitle": "Ce que BROMSE fait :",
   "dont1": "Ne stocke pas vos données personnelles",
   "dont2": "Ne mémorise pas vos recherches",
@@ -27,8 +26,10 @@
   "perimeterMentionEnd": " nouveaux onglets, un pour chaque librairie",
   "perimeterMentionStart": "Votre recherche va ouvrir ",
   "placeholder": "Entrer une requête + Enter",
+  "reInitialize": "Réinitialiser",
   "selectAll": "Tout sélectionner",
   "tabTitle": "BROMSE - Recherche de livre",
   "takeYourRequest": "Envoie votre requêtes aux librairies listées",
+  "unSelectAll": "Tout effacer",
   "whatBROMSEdoes": "Ce que fait BROMSE :"
 }

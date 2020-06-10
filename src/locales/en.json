@@ -14,7 +14,6 @@
   "do31": "Create only one cookie to know if you closed the message \"",
   "do32": "\" not to show it again",
   "do4": "And that's it !",
-  "do5": "Maybe, one day, it will ask for your localization to better select the bookshops",
   "doTitle": "What BROMSE does : ",
   "dont1": "Do not memorize your personal data",
   "dont2": "Do no keep track of your searches",
@@ -27,8 +26,10 @@
   "perimeterMentionEnd": " new tabs, one for each bookshop.",
   "perimeterMentionStart": "Your request will open ",
   "placeholder": "Enter a book request + Enter",
+  "reInitialize": "Re-initialize",
   "selectAll": "Select All",
   "tabTitle": "BROMSE - Book search",
   "takeYourRequest": "Send your request to the listed websites",
+  "unSelectAll": "Unselect all",
   "whatBROMSEdoes": "What BROMSE does :"
 }

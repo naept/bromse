@@ -2,8 +2,11 @@
   <div id="app">
     <topbar />
     <pageTitle />
-    <disclaimer :display="displayDisclaimer" @closeDisclaimer="closeDisclaimer"/>
-    <bromse @showDisclaimer="showDisclaimer"/>
+    <disclaimer
+      :display="displayDisclaimer"
+      @closeDisclaimer="closeDisclaimer"
+    />
+    <bromse @showDisclaimer="showDisclaimer" />
     <info />
     <legals />
   </div>
@@ -26,34 +29,34 @@ export default {
     topbar,
     disclaimer,
     info,
-    legals
+    legals,
   },
 
-  data(){
+  data() {
     return {
       displayDisclaimer: true,
     }
   },
 
-  mounted(){
-    let firstTime = Cookies.get("firstTime")
-    if (firstTime==="false") {
+  mounted() {
+    let firstTime = Cookies.get('firstTime')
+    if (firstTime === 'false') {
       this.displayDisclaimer = false
-    }else{
+    } else {
       this.displayDisclaimer = true
     }
   },
 
-  methods:{
-    closeDisclaimer(){
-      Cookies.set("firstTime", false, { expires: 1825 })
+  methods: {
+    closeDisclaimer() {
+      Cookies.set('firstTime', false, { expires: 1825 })
       this.displayDisclaimer = false
     },
 
-    showDisclaimer(){
-      Cookies.set("firstTime", true, { expires: 1825 })
+    showDisclaimer() {
+      Cookies.set('firstTime', true, { expires: 1825 })
       this.displayDisclaimer = true
-    }
-  }
+    },
+  },
 }
 </script>
