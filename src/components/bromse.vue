@@ -19,15 +19,13 @@
         </div>
       </div>
 
-      <div class="level" style="margin-top: auto; margin-bottom: auto;">
-        <a role="button" @click="toggleList" class="level-item has-text-centered is-red">
-          <img src="@/assets/chevron-right.svg" v-if="showList===false"/>
-          <img src="@/assets/chevron-down.svg" v-if="showList===true"/>
-          <span>{{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}</span>
-        </a>
+      <div class="level" style="margin-top: auto; margin-bottom: 2rem;">
+        <p class="level-item has-text-centered is-red">
+          {{ $t("perimeterMentionStart") }}{{ nbSearchedSites }}{{ $t("perimeterMentionEnd") }}
+        </p>
       </div>
 
-      <div class="container" v-if="showList">
+      <div class="container">
         <div class="columns is-desktop">
           <div class="column map" id="map">
             <div class="map__image">
@@ -82,7 +80,6 @@ export default {
 
     return{
       request: "",
-      showList: false,
       searchEngines: require("../engines.json").map(engine=>{
         return{
           ...engine,
@@ -124,11 +121,6 @@ export default {
 
 
   methods: {
-
-    toggleList (){
-      this.showList = !this.showList
-    },
-
     selectAll (){
       this.searchEngines.forEach(engine=>{
         engine.search = true
