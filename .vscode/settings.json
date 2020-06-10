@@ -1,0 +1,86 @@
+{
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.tabSize": 2,
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestions": {
+    "comments": true
+  },
+  "files.eol": "\n",
+  "php-cs-fixer.rules": "@PhpCsFixer",
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.validate": [{
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "trailingComma": "es5",
+    },
+    "prettyhtml": {
+      "printWidth": 100, // No line exceeds 100 characters
+      "singleQuote": false // Prefer double quotes over single quotes
+    }
+  },
+  "vetur.validation.template": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "stylusSupremacy.insertBraces": false,
+  "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertSemicolons": false,
+  "sass.format.debug": false,
+  "sass.format.deleteEmptyRows": true,
+  "sass.format.deleteWhitespace": true,
+  "sass.format.convert": true,
+  "sass.format.setPropertySpace": true,
+  "php.validate.run": "onType",
+  "cSpell.words": [
+    "Csrf",
+    "Incrementable",
+    "Laravel",
+    "Synaeptic",
+    "Uuid",
+    "Uuids",
+    "commentable",
+    "createchildren",
+    "dragscroll",
+    "htmldiff",
+    "naept",
+    "popperjs",
+    "richtext",
+    "tiptap",
+    "topbar",
+    "vuejs",
+    "vuex"
+  ]
+}
