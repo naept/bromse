@@ -32,6 +32,14 @@
         "location": ""
     },
     {
+        "name": "Livrenpoche.com",
+        "prefix": "https://www.livrenpoche.com/catalogsearch/result/?q=",
+        "union": "+",
+        "suffix": "",
+        "search": true,
+        "location": ""
+    },
+    {
         "name": "Les libraires ensemble",
         "prefix": "https://www.libraires-ensemble.com/recherche/?q=",
         "union": "+",
@@ -129,7 +137,7 @@
     },
     {
         "name": "Association Librairies Indépendantes Pays de la Loire",
-        "prefix": "https://resa.librairies-alip.fr/listeliv.php?base=allbooks&mots_recherche=jules+verne+l%27%C3%AEle+myst%C3%A9rieuse",
+        "prefix": "https://resa.librairies-alip.fr/listeliv.php?base=allbooks&mots_recherche=",
         "union": "+",
         "suffix": "",
         "search": false,
@@ -142,6 +150,14 @@
         "suffix": "",
         "search": false,
         "location": "02,59,60,62,80"
+    },
+    {
+        "name": "Chapitre.com",
+        "prefix": "https://www.chapitre.com/search/Default.aspx?cleanparam=&titre=&ne=&n=0&auteur=&peopleId=&quicksearch=",
+        "union": "+",
+        "suffix": "&editeur=&reference=&plng=&optSearch=&beginDate=&endDate=&mot_cle=&prix=&themeId=&collection=&subquicksearch=&page=1",
+        "search": false,
+        "location": ""
     },
     {
         "name": "Cultura",
