@@ -144,6 +144,14 @@
         "location": "44,49,72,85"
     },
     {
+        "name": "Librairie Mollat",
+        "prefix": "https://www.mollat.com/recherche?requete=",
+        "union": "%20",
+        "suffix": "",
+        "search": false,
+        "location": "33"
+    },
+    {
         "name": "Libr/aire",
         "prefix": "https://www.libr-aire.fr/recherche/?q=",
         "union": "+",
